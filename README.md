@@ -47,6 +47,10 @@ We give you the kitchen sink.
       { alphabet: '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz',
         codec: [Object],
         base: 58 },
+     stoxum:
+      { alphabet: 'xFtyEXqQ2YpfNC9zmjoaJAG5n4MSigZsKvB1UP37kwbucVrTHhD8dRLeW6',
+        codec: [Object],
+        base: 58 },
      ripple:
       { alphabet: 'rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz',
         codec: [Object],
