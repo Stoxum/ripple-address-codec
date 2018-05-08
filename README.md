@@ -1,9 +1,9 @@
-# ripple-address-codec [![NPM](https://img.shields.io/npm/v/ripple-address-codec.svg)](https://npmjs.org/package/ripple-address-codec) [![Build Status](https://img.shields.io/travis/ripple/ripple-address-codec/master.svg)](https://travis-ci.org/ripple/ripple-address-codec) [![codecov.io](http://codecov.io/github/ripple/ripple-address-codec/coverage.svg?branch=master)](http://codecov.io/github/ripple/ripple-address-codec?branch=master)
+# stoxum-address-codec [![NPM](https://img.shields.io/npm/v/stoxum-address-codec.svg)](https://npmjs.org/package/stoxum-address-codec) [![Build Status](https://img.shields.io/travis/ripple/stoxum-address-codec/master.svg)](https://travis-ci.org/ripple/stoxum-address-codec) [![codecov.io](http://codecov.io/github/ripple/stoxum-address-codec/coverage.svg?branch=master)](http://codecov.io/github/ripple/stoxum-address-codec?branch=master)
 
 ## API
 
 ```js
-> var api = require('ripple-address-codec');
+> var api = require('stoxum-address-codec');
 > api.decodeSeed('sEdTM1uX8pu2do5XvTnutH6HsouMaM2')
 { version: [ 1, 225, 75 ],
   bytes: [ 76, 58, 29, 33, 63, 189, 251, 20, 199, 194, 141, 96, 148, 105, 179, 65 ],
