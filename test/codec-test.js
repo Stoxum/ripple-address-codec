@@ -25,32 +25,32 @@ describe('stoxum-address-codec', function() {
     })
   }
 
-  makeTest('AccountID', 'rJrRMgiRgrU6hDF4pgu5DXQdWyPbY35ErN',
+  makeTest('AccountID', 'xjxnJ7hn7xfkyNTAF7dwNZ5UgWGBsQw9xC',
     'BA8E78626EE42C41B46D46C3048DF3A1C3C87072')
 
   makeTest(
     'NodePublic',
-    'n9MXXueo837zYH36DvMc13BwHcqtfAWNJY5czWVbp7uYTj7x17TH',
+    'E2JZZdPrVQS6smQkNRJ1DQpYm1H8qLgCjsw16giBFSdsMbSeDSMm',
     '0388E5BA87A000CB807240DF8C848EB0B5FFA5C8E5A521BC8E105C0F0A44217828')
 
-  makeTest('K256Seed', 'sn259rEFXrQrWyx3Q7XneWcwV6dfL',
+  makeTest('K256Seed', 'tEvw2x9TZx5xgWeQ5SZEPg1YikUqa',
     'CF2DE378FBDD7E2EE87D486DFB5A7BFF')
 
-  makeTest('EdSeed', 'sEdTM1uX8pu2do5XvTnutH6HsouMaM2',
+  makeTest('EdSeed', 't9UMJDdZVFdvUrwZRMEd8mkmtrdJXJv',
     '4C3A1D213FBDFB14C7C28D609469B341')
 
   it('can decode arbitray seeds', function() {
-    const decoded = api.decodeSeed('sEdTM1uX8pu2do5XvTnutH6HsouMaM2')
+    const decoded = api.decodeSeed('t9UMJDdZVFdvUrwZRMEd8mkmtrdJXJv')
     assert.equal(toHex(decoded.bytes), '4C3A1D213FBDFB14C7C28D609469B341')
     assert.equal(decoded.type, 'ed25519')
 
-    const decoded2 = api.decodeSeed('sn259rEFXrQrWyx3Q7XneWcwV6dfL')
+    const decoded2 = api.decodeSeed('tEvw2x9TZx5xgWeQ5SZEPg1YikUqa')
     assert.equal(toHex(decoded2.bytes), 'CF2DE378FBDD7E2EE87D486DFB5A7BFF')
     assert.equal(decoded2.type, 'secp256k1')
   })
 
   it('can pass a type as second arg to encodeSeed', function() {
-    const edSeed = 'sEdTM1uX8pu2do5XvTnutH6HsouMaM2'
+    const edSeed = 't9UMJDdZVFdvUrwZRMEd8mkmtrdJXJv'
     const decoded = api.decodeSeed(edSeed)
     assert.equal(toHex(decoded.bytes), '4C3A1D213FBDFB14C7C28D609469B341')
     assert.equal(decoded.type, 'ed25519')
